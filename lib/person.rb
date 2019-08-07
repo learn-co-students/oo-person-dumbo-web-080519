@@ -31,28 +31,6 @@ class Person
     @hygiene = h_value
   end
 
-  # def change_happiness(amount)
-  #   if @happiness < 10
-  #     @happiness += amount
-  #     if @happiness > 10
-  #       @happiness = 10
-  #     elsif @happiness < 0
-  #       @happiness = 0
-  #     end
-  #   end
-  # end
-
-  # def change_hygiene(amount)
-  #   if @hygiene < 10
-  #     @hygiene += amount
-  #     if @hygiene > 10
-  #       @hygiene = 10
-  #     elsif @hygiene < 0
-  #       @hygiene = 0
-  #     end
-  #   end
-  # end
-
   def happy?
     @happiness > 7 ? (true) : (false)
   end
@@ -99,5 +77,5 @@ class Person
 end
 
 
-#blah 
+#blah
 test = Person.new("Test")
