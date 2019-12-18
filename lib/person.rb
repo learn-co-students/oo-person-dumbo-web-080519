@@ -12,11 +12,8 @@ class Person
     end
 
     def clean?
-        if @hygiene > 7
-            true
-        else
-            false
-        end
+        return @hygiene > 7
+    
     end
 
     def happy?
@@ -29,7 +26,7 @@ class Person
 
     def get_paid(salary)
         @bank_account += salary
-        "all about the benjamins"
+        return "all about the benjamins"
     end
 
     def work_out
@@ -79,7 +76,6 @@ class Person
             "blah blah blah blah blah"
         end
     end
-
 
     def take_bath
         self.hygiene=(@hygiene+4)
